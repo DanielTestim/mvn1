@@ -14,4 +14,14 @@ public class NewTest {
 		Thread.sleep(3000);
 		driver.quit();
   }
+  
+  @Test
+  public void g() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\seleniumfiles\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://google.com");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.quit();
+  }
 }
